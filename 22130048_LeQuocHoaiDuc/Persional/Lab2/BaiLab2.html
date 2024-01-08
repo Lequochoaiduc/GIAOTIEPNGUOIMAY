@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai lab 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/bai8/fontawesome-free-6.4.2-web/css/all.css">
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 480px;
+  height: 740px;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid;
+}
+.top {
+  /* border: 1px solid red; */
+  width: 300px;
+  height: 105px;
+  position: absolute;
+  right: 0px;
+  display: flex;
+  align-items: center;
+}
+.top_left {
+  /* border: 1px solid red; */
+
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  right: 0px;
+  background-image: linear-gradient(to left, #3a6cd9, #1397ed);
+}
+.top_title_big {
+  color: #fdfdfe;
+  /* border: 1px solid; */
+  text-align: center;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.top_title_small {
+  color: #b8daf7;
+  text-align: center;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.big_line_right_in {
+  position: absolute;
+  width: 160px;
+  height: 738px;
+  background-color: #526eff;
+  /* border: 1px solid; */
+  left: 18px;
+}
+.line_out {
+  position: absolute;
+  width: 200px;
+  height: 635px;
+  background-image: linear-gradient(to top, #564ecb, #1ab7ff);
+  bottom: 0px;
+}
+#triagel_down {
+  position: absolute;
+  left: 18px;
+  width: 160px;
+  height: 0;
+  border-top: 49px solid #526eff;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+}
+.icon2 {
+  position: absolute;
+  top: 10px;
+  left: 35px;
+}
+.first_cont {
+  position: relative;
+  /* border: 1px solid; */
+  height: 230px;
+}
+.title_first {
+  position: absolute;
+  width: 110px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* border: 1px solid red; */
+  color: white;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+.dot_left {
+  position: absolute;
+  /* border: 1px solid; */
+  top: 25%;
+  color: white;
+}
+.height_dot_left {
+  position: absolute;
+  /* border: 1px solid; */
+  top: 25%;
+  left: 32px;
+  font-size: x-large;
+  color: white;
+}
+.dot_right {
+  position: absolute;
+  /* border: 1px solid; */
+  top: 25%;
+  right: 0px;
+  color: white;
+}
+.height_dot_right {
+  position: absolute;
+  /* border: 1px solid; */
+  top: 25%;
+  right: 37px;
+  font-size: x-large;
+  color: white;
+}
+.bar {
+  position: absolute;
+  bottom: 0px;
+  /* border: 1px solid; */
+  width: 70px;
+  height: 200px;
+}
+.bar_1 {
+  position: absolute;
+  width: 70px;
+  height: 20px;
+  border-radius: 0px 10px 10px 0px;
+  top: 60px;
+  background-color: #526eff;
+}
+.fa-solid {
+  position: absolute;
+  right: 5px;
+  font-size: 15px;
+}
+.fa-brands {
+  position: absolute;
+  right: 5px;
+  font-size: 15px;
+}
+.bar_2 {
+  position: absolute;
+  width: 70px;
+  height: 20px;
+  border-radius: 0px 10px 10px 0px;
+  top: 95px;
+  background-color: #526eff;
+}
+.bar_3 {
+  position: absolute;
+  width: 70px;
+  height: 20px;
+  border-radius: 0px 10px 10px 0px;
+  top: 130px;
+  background-color: #526eff;
+}
+.bar_4 {
+  position: absolute;
+  width: 70px;
+  height: 20px;
+  border-radius: 0px 10px 10px 0px;
+  top: 165px;
+  background-color: #526eff;
+}
+.infor_phone {
+  position: absolute;
+  /* border: 1px solid; */
+  right: 45px;
+  top: 88px;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.phone {
+  font-weight: bold;
+}
+.mail {
+  position: absolute;
+  /* border: 1px solid; */
+  right: 20px;
+  top: 120px;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.title {
+  font-weight: bold;
+}
+.linkedin {
+  position: absolute;
+  /* border: 1px solid; */
+  right: 34px;
+  top: 155px;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.above {
+  font-weight: bold;
+}
+.address {
+  position: absolute;
+  /* border: 1px solid; */
+  right: 17px;
+  top: 190px;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.tren {
+  font-weight: bold;
+}
+.second_cont {
+  position: absolute;
+  /* border: 1px solid; */
+  width: 200px;
+  height: 200px;
+}
+.title_first_1 {
+  position: absolute;
+  width: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* border: 1px solid red; */
+  color: white;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, -50%);
+}
+.dot_right_1 {
+  position: absolute;
+  right: 0px;
+  color: white;
+}
+.dot_left_1 {
+  position: absolute;
+  left: 0px;
+  color: white;
+}
+.height_dot_left_1 {
+  position: absolute;
+  left: 55px;
+  font-size: x-large;
+  color: white;
+}
+.height_dot_right_1 {
+  position: absolute;
+  right: 66px;
+  font-size: x-large;
+  color: white;
+}
+.container {
+  position: absolute;
+  top: 30px;
+  display: grid;
+  grid-template-columns: 66px 66px 66px;
+}
+.third_cont {
+  position: absolute;
+  /* border: 1px solid; */
+  top: 370px;
+  width: 200px;
+  height: 200px;
+}
+.title_first_2 {
+  position: absolute;
+  width: 90px;
+  /* border: 1px solid red; */
+  color: white;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.dot_right_2 {
+  position: absolute;
+  right: 0px;
+  color: white;
+}
+.dot_left_2 {
+  position: absolute;
+  left: 0px;
+  color: white;
+}
+.height_dot_left_2 {
+  position: absolute;
+  left: 40px;
+  font-size: x-large;
+  color: white;
+}
+.height_dot_right_2 {
+  position: absolute;
+  right: 40px;
+  font-size: x-large;
+  color: white;
+}
+.market {
+  position: absolute;
+  color: white;
+  top: 30px;
+  left: 33%;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.pls {
+  position: absolute;
+  color: white;
+  top: 70px;
+  left: 25%;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.draw {
+  position: absolute;
+  color: white;
+  top: 110px;
+  left: 35%;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.copy {
+  position: absolute;
+  color: white;
+  top: 150px;
+  left: 31%;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.load_1 {
+  background-color: white;
+  /* border: 1px solid ; */
+  border-radius: 8px;
+  position: absolute;
+  width: 150px;
+  height: 13px;
+  left: 12%;
+  top: 45px;
+}
+.load_2 {
+  background-color: white;
+  /* border: 1px solid ; */
+  border-radius: 8px;
+  position: absolute;
+  width: 150px;
+  height: 13px;
+  left: 12%;
+  top: 85px;
+}
+.load_3 {
+  background-color: white;
+  /* border: 1px solid ; */
+  border-radius: 8px;
+  position: absolute;
+  width: 150px;
+  height: 13px;
+  left: 12%;
+  top: 125px;
+}
+.load_4 {
+  background-color: white;
+  /* border: 1px solid ; */
+  border-radius: 8px;
+  position: absolute;
+  width: 150px;
+  height: 13px;
+  left: 12%;
+  top: 165px;
+}
+.in_1 {
+  position: absolute;
+
+  width: 120px;
+  height: 13px;
+  border-radius: 8px;
+  background-color: #10a9ff;
+}
+.in_2 {
+  position: absolute;
+
+  width: 120px;
+  height: 13px;
+  border-radius: 8px;
+  background-color: #10a9ff;
+}
+.in_3 {
+  position: absolute;
+
+  width: 120px;
+  height: 13px;
+  border-radius: 8px;
+  background-color: #10a9ff;
+}
+.in_4 {
+  position: absolute;
+
+  width: 120px;
+  height: 13px;
+  border-radius: 8px;
+  background-color: #10a9ff;
+}
+.fourth_cont {
+  position: absolute;
+  /* border: 1px solid; */
+  width: 200px;
+  height: 85px;
+  top: 550px;
+}
+.title_first_3 {
+  position: absolute;
+  width: 75px;
+  /* border: 1px solid red; */
+  color: white;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.dot_right_3 {
+  position: absolute;
+  right: 0px;
+  color: white;
+}
+.dot_left_3 {
+  position: absolute;
+  left: 0px;
+  color: white;
+}
+.height_dot_left_3 {
+  position: absolute;
+  left: 45px;
+  font-size: x-large;
+  color: white;
+}
+.height_dot_right_3 {
+  position: absolute;
+  right: 45px;
+  font-size: x-large;
+  color: white;
+}
+
+.psi_1 {
+  position: absolute;
+  border-radius: 50%;
+  /* border: 1px solid; */
+  width: 32px;
+  height: 32px;
+  background-color: #03a9f5;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  top: 40px;
+  left: 5px;
+}
+.fa-plane {
+  height: 15px;
+}
+.psi_2 {
+  position: absolute;
+  border-radius: 50%;
+  /* border: 1px solid; */
+  width: 32px;
+  height: 32px;
+  background-color: #03a9f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50px;
+  top: 40px;
+}
+.fa-person-walking {
+  width: 15px;
+}
+.psi_3 {
+  position: absolute;
+  border-radius: 50%;
+  /* border: 1px solid; */
+  width: 32px;
+  height: 32px;
+  background-color: #03a9f5;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  left: 100px;
+  top: 40px;
+}
+.psi_4 {
+  position: absolute;
+  border-radius: 50%;
+  /* border: 1px solid; */
+  width: 32px;
+  height: 32px;
+  background-color: #03a9f5;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  left: 150px;
+  top: 40px;
+}
+.right_main {
+  position: absolute;
+  width: 270px;
+  /* border: 1px solid red; */
+  right: 0px;
+  height: 740px;
+}
+.ps_pro {
+  position: absolute;
+  border-radius: 50%;
+  /* border: 1px solid; */
+  width: 38px;
+  height: 38px;
+  background-color: #526eff;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  top: 100px;
+  left: 10px;
+}
+.fa-user {
+  width: 20px;
+}
+.pro {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 110px;
+  left: 55px;
+  color: #6c65d1;
+}
+.dot_1{
+  position: absolute;
+  font-size: 80px;
+  right: 0px;
+  top: 50px;
+  color: #10a9fe;
+}
+.pro_text{
+  position: absolute;
+  /* border: 1px solid; */
+  top: 140px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+.ps_edu{
+  position: absolute;
+  border-radius: 50%;
+  /* border: 1px solid; */
+  width: 38px;
+  height: 38px;
+  background-color: #526eff;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  top: 260px;
+  left: 10px;
+}
+.fa-user-graduate{
+  width: 20px;
+}
+
+.edu{
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 270px;
+  left: 55px;
+  color: #6c65d1;
+}
+.dot_2{
+  position: absolute;
+  font-size: 80px;
+  right: 0px;
+  top: 210px;
+  color: #10a9fe;
+}
+.year1{
+  position: absolute;
+  width: 40px;
+  top: 300px;
+  left: 15px;
+  font-size: 12px;
+  /* border: 1px solid; */
+}
+.border_1{
+  position: absolute;
+  border: 2px solid;
+  height: 30px;
+  top: 330px;
+  left: 25px;
+}
+.p_1{
+  position: absolute;
+  top: 295px;
+  left: 45px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #4d5d85;
+}
+.p_2{
+  position: absolute;
+  top: 310px;
+  left: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #4d5d85;
+}
+.p_3{
+  position: absolute;
+  top: 330px;
+  left: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #4d5d85;
+}
+.year2{
+  position: absolute;
+  width: 40px;
+  top: 370px;
+  left: 15px;
+  font-size: 12px;
+}
+.border_2{
+  position: absolute;
+  border: 2px solid;
+  height: 30px;
+  top: 405px;
+  left: 25px;
+}
+.year3{
+  position: absolute;
+  width: 40px;
+  top: 440px;
+  left: 15px;
+  font-size: 12px;
+}
+.border_3{
+  position: absolute;
+  border: 2px solid;
+  height: 30px;
+  top: 475px;
+  left: 25px;
+}
+.p_5{
+  position: absolute;
+  top: 370px;
+  left: 45px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #4d5d85;
+}
+.p_6{
+  position: absolute;
+  top: 385px;
+  left: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #4d5d85;
+}
+.p_7{
+  position: absolute;
+  top: 405px;
+  left: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #4d5d85;
+}
+.p_8{
+  position: absolute;
+  top: 445px;
+  left: 45px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #4d5d85;
+}
+.p_9{
+  position: absolute;
+  top: 460px;
+  left: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #4d5d85;
+}
+.p_10{
+  position: absolute;
+  top: 480px;
+  left: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #4d5d85;
+}
+.ps_exp{
+  position: absolute;
+  border-radius: 50%;
+  /* border: 1px solid; */
+  width: 38px;
+  height: 38px;
+  background-color: #526eff;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  top: 525px;
+  left: 10px;
+}
+.fa-briefcase{
+  width: 21px;
+}
+.exp{
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 535px;
+  left: 55px;
+  color: #6c65d1;
+}
+.dot_3{
+  position: absolute;
+  font-size: 80px;
+  right: 0px;
+  top: 475px;
+  color: #10a9fe;
+}
+.year_exp1{
+  position: absolute;
+  width: 40px;
+  top: 570px;
+  left: 15px;
+  font-size: 12px;
+}
+.borderx_1{
+  position: absolute;
+  border: 2px solid;
+  height: 30px;
+  top: 600px;
+  left: 25px;
+}
+.year_exp2{
+  position: absolute;
+  width: 40px;
+  top: 640px;
+  left: 15px;
+  font-size: 12px;
+}
+.borderx_2{
+  position: absolute;
+  border: 2px solid;
+  height: 30px;
+  top: 670px;
+  left: 25px;
+}
+.px_1{
+  position: absolute;
+  top: 565px;
+  left: 45px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #4d5d85;
+}
+.px_2{
+  position: absolute;
+  top: 580px;
+  left: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #4d5d85;
+}
+.px_3{
+  position: absolute;
+  top: 600px;
+  left: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #4d5d85;
+}
+.px_5{
+  position: absolute;
+  top: 635px;
+  left: 45px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #4d5d85;
+}
+.px_6{
+  position: absolute;
+  top: 650px;
+  left: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #4d5d85;
+}
+.px_7{
+  position: absolute;
+  top: 670px;
+  left: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #4d5d85;
+}
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+       
+      <div class="top">
+        <div class="top_left">
+          <p class="top_title_big">RUBY THUY</p>
+          <p class="top_title_small">DESIGNER & DEVELOPER</p>
+        </div>
+      </div>
+
+      <div class="big_line_right_in"></div>
+      <div class="line_out">
+        <div id="triagel_down"></div>
+        <div class="content">
+            <div class="first_cont">
+                <p class="title_first">CONTACT ME</p>
+                <p class="dot_right">.........</p>
+                <i  class="height_dot_left" >&#8226</i>
+                <p class="dot_left">........</p>
+                <i  class="height_dot_right" >&#8226</i>
+                
+                <div class="bar">
+                  <div class="bar_1"><i class="fa-solid fa-phone" style="color: #ffffff;"></i></div>
+                  <div class="bar_2"><i class="fa-sharp fa-solid fa-envelope" style="color: #ffffff;"></i></div>
+                  <div class="bar_3"><i class="fa-sharp fa-solid fa-location-dot" style="color: #ffffff;"></i></div>
+                  <div class="bar_4"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></div>
+                </div>
+                
+                <div class="infor_phone">
+                  <p class="phone">PHONE</p>
+                  <p class="sdt">00 1234 56789</p>
+                </div>
+                <div class="mail">
+                  <p class="title">MAIL</p>
+                  <p class="infor_mail">Yourmail@mail.com</p>
+                </div>
+                <div class="linkedin">
+                  <p class="above">LINKEDIN</p>
+                  <p class="under">Yourlinkedin.com</p>
+                </div>
+                <div class="address">
+                  <p class="tren">ADDRESS</p>
+                  <p class="duoi">Address, City, 12345</p>
+                </div>
+            </div>
+            <div class="second_cont">
+              <p class="title_first_1">SKILL</p>
+                <p class="dot_right_1">................</p>
+                <i  class="height_dot_left_1" >&#8226</i>
+                <p class="dot_left_1">...............</p>
+                <i  class="height_dot_right_1" >&#8226</i>
+                <div class="container"><img src="image2/canva-logo.png" width="46px" alt="" class="icon_cv">
+                <img src="image2/Lr.png" width="55px" alt="" class="icon_lr">
+                <img src="image2/icon-ai-3.jpg" alt="" width="53px" class="icon_ai">
+                <img src="image2/App-Adobe-Premiere-Pro-icon.png" width="52px" alt="" class="icon_pr">
+                <img src="image2/ae.png" width="46px" alt="" class="icon_ae">
+                <img src="image2/adobe-photoshop-cc-circle-logo-3BE8AF841D-seeklogo.com.png" width="48px" alt="">
+              </div>
+                
+            </div>
+            <div class="third_cont">
+              <p class="title_first_2">LANGUAGE</p>
+                <p class="dot_right_2">..........</p>
+                <i  class="height_dot_left_2" >&#8226</i>
+                <p class="dot_left_2">..........</p>
+                <i  class="height_dot_right_2" >&#8226</i>
+                  <p class="market">MARKETING</p>
+                <div class="load_1"><div class="in_1"></div></div>
+                <p class="pls">PUBLIC SPEAKING</p>
+                <div class="load_2"><div class="in_2"></div></div>
+                <p class="draw">DRAWING</p>
+                <div class="load_3"><div class="in_3"></div></div>
+                <p class="copy">COPYWRITER</p>
+                <div class="load_4"><div class="in_4"></div></div>
+            </div>
+            <div class="fourth_cont">
+              <p class="title_first_3">PASSION</p>
+              <p class="dot_right_3">............</p>
+              <i  class="height_dot_left_3" >&#8226</i>
+              <p class="dot_left_3">............</p>
+              <i  class="height_dot_right_3" >&#8226</i>
+              <div class="ps_1"><div class="psi_1"><i class="fa-solid fa-plane" style="color: #ffffff;"></i></div>
+              <div class="psi_2"><i class="fa-solid fa-person-walking" style="color: #ffffff;"></i></div>
+              <div class="psi_3"><i class="fa-solid fa-microscope" style="color: #ffffff;"></i></div>
+              <div class="psi_4"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></div></div>
+              
+            </div>
+
+        </div>
+        
+        
+      </div>
+      <div class="right_main">
+          <div class="profile">
+            <h4 class="pro">PROFILE</h4>
+            <p class="dot_1">.......</p>
+            <p class="pro_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis nihil odio reiciendis, totam ut saepe ipsam nam cupiditate architecto expedita, eos assumenda voluptates eveniet, quis dignissimos quo illum minus accusamus?</p>
+            <div class="ps_pro"><i class="fa-solid fa-user" style="color: #ffffff;"></i></div>
+          </div>
+         
+          <div class="education">
+            <h4 class="edu">EDUCATION</h4>
+            <p class="dot_2">......</p>
+            <div class="ps_edu"><i class="fa-solid fa-user-graduate" style="color: #ffffff;"></i></div>
+              <div class="year1">2018 2019</div>
+            <p class="p_1">Enter your master degree</p>
+            <p class="p_2">Institute/ Organization/ College</p>
+            <p class="p_3">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+            <div class="border_1"></div>
+            <div class="year2">2019 2020</div>
+            <p class="p_5">Enter your master degree</p>
+            <p class="p_6">Institute/ Organization/ College</p>
+            <p class="p_7">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+            <div class="border_2"></div>
+            <div class="year3">2020 2021</div>
+            <p class="p_8">Enter your master degree</p>
+            <p class="p_9">Institute/ Organization/ College</p>
+            <p class="p_10">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+            <div class="border_3"></div>
+          </div>
+          <div class="experience">
+            <h4 class="exp">EXPERIENCE</h4>
+            <p class="dot_3">.....</p>
+            <div class="ps_exp"><i class="fa-sharp fa-solid fa-briefcase" style="color: #ffffff;"></i></div>
+            <div class="year_exp1">2018 2019</div>
+            <p class="px_1">Enter your master degree</p>
+            <p class="px_2">Institute/ Organization/ College</p>
+            <p class="px_3">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+            <div class="borderx_1"></div>
+            <div class="year_exp2">2019 2020</div>
+            <p class="px_5">Enter your master degree</p>
+            <p class="px_6">Institute/ Organization/ College</p>
+            <p class="px_7">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+            <div class="borderx_2"></div>
+            
+
+          </div>
+            
+          
+        </div>
+     <img src="image2/image-removebg-preview (1).png" alt="" width="130px" class="icon2">
+    </div>
+  </body>
+</html>

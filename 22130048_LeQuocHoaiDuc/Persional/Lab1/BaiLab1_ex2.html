@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai Lab 1 ex2</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 1000px;
+  height: 630px;
+  margin: 0px auto;
+  background-image: url(image/snapedit.png);
+  position: relative;
+}
+.navbar {
+  height: 100px;
+  /* border: 1px solid red; */
+  position: relative;
+}
+.navbar_right {
+  position: absolute;
+  display: flex;
+}
+.cont {
+  width: 190px;
+  position: absolute;
+  left: 140px;
+  top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.icon {
+  position: absolute;
+  left: 50px;
+  top: 15px;
+}
+.list {
+  position: absolute;
+  right: 60px;
+  top: 30px;
+  display: flex;
+}
+.list_item_buttom,
+.list_item {
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  right: 0px;
+  font-weight: 550;
+}
+.list_item_buttom {
+  height: 25px;
+  width: 70px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  margin: 5px;
+}
+.main {
+  position: relative;
+  height: 530px;
+  /* border: 1px solid red; */
+}
+.main_content {
+  position: absolute;
+  /* border: 1px solid blue; */
+  width: 500px;
+  font-size: 47px;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 70px;
+  top: 90px;
+  color: white;
+}
+.main_content_small {
+  position: absolute;
+  /* border: 1px solid ; */
+  width: 500px;
+  font-size: 20px;
+  left: 70px;
+  top: 200px;
+}
+.buttom_ChPlay {
+  position: absolute;
+  height: 50px;
+  width: 180px;
+  border: none;
+  border-radius: 7px;
+  background-color: black;
+  align-items: center;
+  justify-content: space-evenly;
+color: white;
+  display: flex;
+  /* margin: 5px; */
+
+  top: 310px;
+  left: 300px;
+}
+.buttom_AppleStore {
+  position: absolute;
+  height: 50px;
+  width: 180px;
+  border: none;
+  border-radius: 7px;
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+
+  left: 70px;
+  top: 310px;
+}
+.evalute_4Star{
+    position: absolute;
+    /* border: 1px solid; */
+    width: 180px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    left: 75px;
+    top: 368px;
+   
+}
+.evalute_5Star{
+    position: absolute;
+    /* border: 1px solid; */
+    width: 180px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    left: 305px;
+    top: 370px;
+}
+.phone{
+position: absolute;
+left: 650px;
+top: 100px;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="image/iconDienThoai.png" alt="" width="240px" class="phone">
+      <div class="navbar">
+        <div class="navbar_right">
+          <img src="image/iconEx2.png" alt="" class="icon" />
+          <p class="cont">AQUA INVESMENT</p>
+        </div>
+
+        <ul class="list">
+          <li class="list_item">Market</li>
+          <li class="list_item">Pricing</li>
+          <li class="list_item">Community</li>
+          <li class="list_item">Download</li>
+          <li class="list_item">Sign Up</li>
+          <li class="list_item_buttom">Log in</li>
+        </ul>
+      </div>
+      <div class="main">
+        <h1 class="main_content">Not An Investing Genius? We can help!</h1>
+        <p class="main_content_small">
+          Our app user friendly, convenient and automatically invests your money
+          for you. Investing doesn't have to hard, download our app now and get
+          started in minutes!
+        </p>
+        <div class="buttom_ChPlay">
+          <img src="image/iconChPlay.png" width="24" alt="" />DOWNLOAD
+        </div>
+        <div class="buttom_AppleStore">
+          <img
+            src="image/iphone-12-1-removebg-preview.png"
+            width="50"
+            alt=""
+          />DOWNLOAD
+        </div>
+        <div class="evalute_4Star">
+          4.0 <img src="image/4sao.png" width="150px" alt="" />
+        </div>
+        <div class="evalute_5Star">
+          5.0 <img src="image/5sao.png" width="150px" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

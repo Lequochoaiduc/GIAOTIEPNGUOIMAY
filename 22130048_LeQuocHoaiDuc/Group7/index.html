@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,maximum-scale=1"
+    />
+
+    <title>Nhóm 7</title>
+
+    <!-- Loading third party fonts -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Loading main css file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--[if lt IE 9]>
+      <script src="js/ie-support/html5.js"></script>
+      <script src="js/ie-support/respond.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="site-content">
+      <div class="site-header">
+        <div class="container">
+          <a href="index.html" class="branding">
+            <img src="images/logo.png" alt="" class="logo" />
+            <div class="logo-type">
+              <h1 class="site-title">Nhóm 7</h1>
+              <small class="site-description">Dự báo thời tiết</small>
+            </div>
+          </a>
+
+          <!-- Default snippet for navigation -->
+          <div class="main-navigation">
+            <button type="button" class="menu-toggle">
+              <i class="fa fa-bars"></i>
+            </button>
+            <ul class="menu">
+              <li class="menu-item current-menu-item">
+                <a href="index.html">Trang Chủ</a>
+              </li>
+              <li class="menu-item"><a href="news.html">Tin tức</a></li>
+              <li class="menu-item">
+                <a href="live-cameras.html">Trực tiếp</a>
+              </li>
+              <li class="menu-item"><a href="photos.html">Hình ảnh</a></li>
+              <li class="menu-item"><a href="contact.html">Liên hệ</a></li>
+              <li class="menu-item"><a href="about.html">Thông tin</a></li>
+              <li class="login-item animation-item-button">
+                <a href="login.html">Đăng nhập</a>
+              </li>
+            </ul>
+            <!-- .menu -->
+          </div>
+          <!-- .main-navigation -->
+
+          <div class="mobile-navigation"></div>
+        </div>
+      </div>
+      <!-- .site-header -->
+
+      <div class="hero" data-bg-image="images/modify/Hinh-anh-Sai-Gon-1.jpg">
+        <div class="container">
+          <form action="news.html" class="find-location" method="get">
+            <input
+              type="text"
+              name="*"
+              style="color: white"
+              placeholder="Nhập địa chỉ tìm kiếm..."
+            />
+            <input type="submit" value="Tìm kiếm" class="animation-item" />
+          </form>
+        </div>
+      </div>
+      <div class="forecast-table">
+        <div class="container">
+          <div class="forecast-container">
+            <div class="today forecast">
+              <div class="forecast-header">
+                <div class="day">Thứ hai</div>
+                <div class="date">20/11</div>
+              </div>
+              <!-- .forecast-header  1 3 5 7 12 13 14-->
+              <div class="forecast-content">
+                <div class="location">TP.HCM</div>
+                <div class="degree">
+                  <div class="num">28<sup>o</sup>C</div>
+                  <div class="forecast-icon">
+                    <img src="images/icons/icon-1.gif" alt="" width="100" />
+                  </div>
+                </div>
+                <span><img src="images/icon-umberella.png" alt="" />20%</span>
+                <span><img src="images/icon-wind.png" alt="" />18km/h</span>
+                <span
+                  ><img src="images/icon-compass.png" alt="" />hướng Đông</span
+                >
+              </div>
+            </div>
+            <div class="forecast">
+              <div class="forecast-header">
+                <div class="day">Thứ ba</div>
+              </div>
+              <!-- .forecast-header -->
+              <div class="forecast-content">
+                <div class="forecast-icon">
+                  <img src="images/icons/icon-3.gif" alt="" width="48" />
+                </div>
+                <div class="degree">26<sup>o</sup>C</div>
+                <small>20<sup>o</sup></small>
+              </div>
+            </div>
+            <div class="forecast">
+              <div class="forecast-header">
+                <div class="day">Thứ tư</div>
+              </div>
+              <!-- .forecast-header -->
+              <div class="forecast-content">
+                <div class="forecast-icon">
+                  <img src="images/icons/icon-5.gif" alt="" width="48" />
+                </div>
+                <div class="degree">25<sup>o</sup>C</div>
+                <small>19<sup>o</sup></small>
+              </div>
+            </div>
+            <div class="forecast">
+              <div class="forecast-header">
+                <div class="day">Thứ năm</div>
+              </div>
+              <!-- .forecast-header -->
+              <div class="forecast-content">
+                <div class="forecast-icon">
+                  <img src="images/icons/icon-7.gif" alt="" width="48" />
+                </div>
+                <div class="degree">27<sup>o</sup>C</div>
+                <small>18<sup>o</sup></small>
+              </div>
+            </div>
+            <div class="forecast">
+              <div class="forecast-header">
+                <div class="day">Thứ sáu</div>
+              </div>
+              <!-- .forecast-header -->
+              <div class="forecast-content">
+                <div class="forecast-icon">
+                  <img src="images/icons/icon-12.gif" alt="" width="48" />
+                </div>
+                <div class="degree">25<sup>o</sup>C</div>
+                <small>19<sup>o</sup></small>
+              </div>
+            </div>
+            <div class="forecast">
+              <div class="forecast-header">
+                <div class="day">Thứ 7</div>
+              </div>
+              <!-- .forecast-header -->
+              <div class="forecast-content">
+                <div class="forecast-icon">
+                  <img src="images/icons/icon-13.gif" alt="" width="48" />
+                </div>
+                <div class="degree">25<sup>o</sup>C</div>
+                <small>21<sup>o</sup></small>
+              </div>
+            </div>
+            <div class="forecast">
+              <div class="forecast-header">
+                <div class="day">Chủ Nhật</div>
+              </div>
+              <!-- .forecast-header -->
+              <div class="forecast-content">
+                <div class="forecast-icon">
+                  <img src="images/icons/icon-14.gif" alt="" width="48" />
+                </div>
+                <div class="degree">23<sup>o</sup>C</div>
+                <small>21<sup>o</sup></small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="main-content">
+        <div class="fullwidth-block">
+          <div class="container">
+            <h2 class="section-title">Trực Tiếp</h2>
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div class="live-camera">
+                  <figure class="live-camera-cover">
+                    <img src="images/modify/hinh-anh-tphcm (1).jpg" alt="" />
+                  </figure>
+                  <h3 class="location">TP.HCM</h3>
+                  <small class="date">20/11, 8:00AM</small>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="live-camera">
+                  <figure class="live-camera-cover">
+                    <img src="images/modify/HoGuom.jpg" alt="" />
+                  </figure>
+                  <h3 class="location">Hà Nội</h3>
+                  <small class="date">20/11, 8:00AM</small>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="live-camera">
+                  <figure class="live-camera-cover">
+                    <img src="images/modify/Danang.jpg" alt="" />
+                  </figure>
+                  <h3 class="location">Đà Nẵng</h3>
+                  <small class="date">20/11, 8:00AM</small>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="live-camera">
+                  <figure class="live-camera-cover">
+                    <img src="images/modify/Hue .jpg" alt="" />
+                  </figure>
+                  <h3 class="location">Huế</h3>
+                  <small class="date">20/11, 8:00AM</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fullwidth-block" data-bg-color="#262936">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="news">
+                  <div class="date">20.11</div>
+                  <h3><a href="#">TP.HCM </a></h3>
+                  <p>
+                    Có mây, ngày nắng, chiều tối và đêm có mưa rào và dông vài
+                    nơi. Gió đông bắc cấp 3. Trong mưa dông có khả năng xảy ra
+                    lốc, sét và gió giật mạnh
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="news">
+                  <div class="date">20.11</div>
+                  <h3><a href="#">Hà Nội </a></h3>
+                  <p>
+                    Ít mây, ngày nắng, đêm không mưa. Gió đông bắc cấp 2-3. Sáng
+                    và đêm trời rét.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="news">
+                  <div class="date">20.11</div>
+                  <h3><a href="#">Đà Nẵng </a></h3>
+                  <p>
+                    Phía Bắc nhiều mây, có mưa vài nơi; phía Nam có mây, ngày
+                    nắng, đêm có mưa vài nơi. Gió đông bắc cấp 3. Trong mưa dông
+                    có khả năng xảy ra lốc, sét và gió giật mạnh
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fullwidth-block">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h2 class="section-title">Tính năng</h2>
+                <ul class="arrow-feature">
+                  <li>
+                    <h3>Bản Đồ</h3>
+                    <p>Hiển thị bản đồ toàn quốc</p>
+                  </li>
+                  <li>
+                    <h3>Dự báo gió xoáy (Bão)</h3>
+                    <p>
+                      Thông báo sớm các hiện tượng khí hậu , thiên tai toàn cầu
+                    </p>
+                  </li>
+                  <li>
+                    <h3>Video</h3>
+                    <p>Video về các hiện tượng và hình ảnh trực tiếp khu vực</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h2 class="section-title">Phân tích thời tiết</h2>
+                <ul class="arrow-list">
+                  <li>
+                    <a href="#"
+                      >BẢN TIN DỰ BÁO THỦY TRIỀU 10 NGÀY TỚI (TỪ NGÀY 20/11 ĐẾN
+                      NGÀY 30/11/2023)(20/11/2023)</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >DỰ BÁO TRƯỜNG NƯỚC DÂNG LỚN NHẤT 3 NGÀY
+                      TỚI(20/11/2023)</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >BẢN TIN DỰ BÁO DÒNG CHẢY 10 NGÀY TỚI (TỪ NGÀY 20/11 ĐẾN
+                      NGÀY 30/11/2023)(20/11/2023)</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >BẢN TIN DỰ BÁO SÓNG 10 NGÀY TỚI (TỪ NGÀY 20/11 ĐẾN NGÀY
+                      30/11/2023)(20/11/2023)</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#">BẢN TIN DỰ BÁO THỦY VĂN HẠN NGẮN(20/11/2023)</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h2 class="section-title">Hình ảnh đẹp</h2>
+                <div class="photo-grid">
+                  <a href="#"
+                    ><img src="images/modify/Du-lich-Viet-Nam-3.png" alt="#"
+                  /></a>
+                  <a href="#"
+                    ><img src="images/modify/Du-lich-Viet-Nam-1.png" alt="#"
+                  /></a>
+                  <a href="#"
+                    ><img src="images/modify/Du-lich-Viet-Nam-2.png" alt="#"
+                  /></a>
+                  <a href="#"
+                    ><img src="images/modify/Du-lich-Viet-Nam-9.png" alt="#"
+                  /></a>
+                  <a href="#"
+                    ><img src="images/modify/Du-lich-Viet-Nam-8.png" alt="#"
+                  /></a>
+                  <a href="#"
+                    ><img src="images/modify/Du-lich-Viet-Nam-6.png" alt="#"
+                  /></a>
+                  <a href="#"
+                    ><img src="images/modify/Du-lich-Viet-Nam-4.png" alt="#"
+                  /></a>
+                  <a href="#"
+                    ><img src="images/modify/Du-lich-Viet-Nam-7.png" alt="#"
+                  /></a>
+                  <a href="#"
+                    ><img src="images/modify/Du-lich-Viet-Nam-5.png" alt="#"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- animation -->
+
+        <div class="weather-anim">
+          <img src="images/modify/anim-icon.png" />
+          <img src="images/modify/anim-icon.png" />
+          <img src="images/modify/anim-icon.png" />
+          <img src="images/modify/anim-icon.png" />
+          <img src="images/modify/anim-icon.png" />
+          <img src="images/modify/anim-icon.png" />
+          <img src="images/modify/anim-icon.png" />
+        </div>
+      </main>
+      <!-- .main-content -->
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <h1>SUBSCRIBE FOR DAILY WEATHER NEWS AND MORE</h1>
+              <form action="#" class="subscribe-form">
+                <input
+                  type="text"
+                  placeholder="Nhập email của bạn để đăng ký..."
+                />
+                <input type="submit" value="Đăng ký" class="animation-item" />
+              </form>
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+              <div class="social-links">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <p class="colophon">
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+        </div>
+      </footer>
+      <!-- .site-footer -->
+    </div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

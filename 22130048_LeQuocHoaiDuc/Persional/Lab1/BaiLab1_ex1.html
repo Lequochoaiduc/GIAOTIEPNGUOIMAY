@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai lab 1</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wrapper {
+        width: 1180px;
+        height: 740px;
+        margin: 0px auto;
+        position: relative;
+        /* border: 1px solid red; */
+      }
+      .icon_chef {
+        position: absolute;
+        top: 120px;
+        left: 60px;
+      }
+      .header {
+        height: 90px;
+        /* border: 1px solid green; */
+        position: relative;
+      }
+      .navbar_icon {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 75px;
+      }
+      .navbar_sub {
+        width: 400px;
+        height: auto;
+        position: absolute;
+        top: 27px;
+
+        left: 140px;
+        /* border: 1px solid blue; */
+        font-size: x-large;
+        font-weight: 800;
+
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .navbar_icon2 {
+        position: absolute;
+        right: 60px;
+        top: 15px;
+      }
+      .navbar_sub2 {
+        position: absolute;
+        right: 230px;
+        top: 32px;
+        font-size: small;
+        font-weight: 900;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .main {
+        height: 510px;
+        /* border: 1px solid green; */
+        position: relative;
+        background-image: linear-gradient(to bottom right, #ff6699, #3366ff);
+      }
+      .box_site {
+        width: 687px;
+        height: 510px;
+        /* border: 1px solid black; */
+        position: absolute;
+        right: 0px;
+      }
+      .box_h2 {
+        position: absolute;
+        top: 82px;
+        font-size: xx-large;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+      .box_h1 {
+        width: 484px;
+        position: absolute;
+        font-size: 50px;
+        /* border: 1px solid; */
+        top: 150px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
+      .box_content {
+        /* border: 1px solid; */
+        position: absolute;
+        width: 480px;
+        top: 280px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
+      .text-box {
+        position: absolute;
+        height: 45px;
+        width: 250px;
+        border: none;
+        border-radius: 10px;
+        background-color: white;
+        top: 350px;
+      }
+      .buttom {
+        height: 45px;
+        width: 200px;
+        border: none;
+        border-radius: 10px;
+        background-color: #f34773;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: smaller;
+        font-weight: bolder;
+        position: absolute;
+        left: 270px;
+        top: 350px;
+      }
+      .footer {
+        position: relative;
+        height: 140px;
+        background-color: black;
+      }
+      .box_footer {
+        position: absolute;
+        /* border: 1px solid; */
+        width: 687px;
+        height: 140px;
+        display: flex;
+        color: white;
+        right: 0;
+        top: 50%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="navbar">
+          <div class="navbar_icon">
+            <img src="image/icon-removebg-preview.png" alt="" />
+          </div>
+          <div class="navbar_sub"><p>DELUXUE DELIVERY</p></div>
+          <div class="navbar_icon2">
+            <img src="image/lab1-ex1-removebg-preview.png" alt="" />
+          </div>
+          <div class="navbar_sub2">FOLLOW US</div>
+        </div>
+      </div>
+
+      <!-- end header -->
+      <div class="main">
+        <div class="box">
+          <div class="box_site">
+            <h2 class="box_h2">Coming soon!</h2>
+            <h1 class="box_h1">DINE IN LUXURY, AT HOME</h1>
+            <p class="box_content">
+              Be the first to get the app and get accessto hundredsof luxurious
+              restaurants from top chef in your area, ready to deliver to your
+              door
+            </p>
+            <input
+              type="text"
+              class="text-box"
+              placeholder="Enter your email"
+            />
+            <div class="buttom">GET EARLY ACCESS</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="box_footer">
+          <p>2022 Deluxue Delivery. All Rights Reserved.</p>
+        </div>
+      </div>
+      <div class="icon_chef">
+        <img src="image/img-removebg-preview.png" width="330" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
